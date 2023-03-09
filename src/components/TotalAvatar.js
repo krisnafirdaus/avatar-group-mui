@@ -32,11 +32,17 @@ export default function TotalAvatars() {
           width: "100px",
           height: "100px",
           fontSize: "40px",
+          marginLeft: "-30px",
+        },
+        "& .css-sxh3gq-MuiAvatar-root-MuiAvatarGroup-avatar": {
+          zIndex: data.length + 1,
+          background: "#E7EAF4",
+          color: "#767B87",
         },
       }}
     >
       {data.map((x) => {
-        return <Avatar alt={x.name} src={x.image} />;
+        return <Avatar alt={x.name} src={x.image} sx={{ zIndex: x.id }} />;
       })}
     </AvatarGroup>
   );
