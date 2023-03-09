@@ -39,6 +39,11 @@ export default function TotalAvatars() {
           background: "#E7EAF4",
           color: "#767B87",
         },
+        "& .css-rfuczr": {
+          zIndex: data.length + 1,
+          background: "#E7EAF4",
+          color: "#767B87",
+        },
       }}
     >
       {data.map((x) => {
