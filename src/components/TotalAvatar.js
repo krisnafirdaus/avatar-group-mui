@@ -42,7 +42,9 @@ export default function TotalAvatars() {
       }}
     >
       {data.map((x) => {
-        return <Avatar alt={x.name} src={x.image} sx={{ zIndex: x.id }} />;
+        return (
+          <Avatar key={x.id} alt={x.name} src={x.image} sx={{ zIndex: x.id }} />
+        );
       })}
     </AvatarGroup>
   );
